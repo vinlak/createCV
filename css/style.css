@@ -216,17 +216,17 @@ SECTION WRAPS
 }
 
 #footwrap {
-  background: #2f2f2f;
+  background:   #f2f2f2;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 #footwrap p {
-  color: white;
+  color: rgb(26, 13, 13);
 }
 
 #footwrap h5 {
-  color: white;
+  color: rgb(68, 3, 3);
 }
 
 #footwrap t {
@@ -235,7 +235,7 @@ SECTION WRAPS
 
 #footwrap i {
   padding-right: 8px;
-  color: #1abc9c;
+  color: #69817c;
 }
 
 /* Copyright Wrap */
@@ -278,7 +278,7 @@ SECTION WRAPS
 }
 
 .desc more {
-  color: #95a5a6;
+  color: #6f5fa8;
 }
 
 sm {
@@ -288,11 +288,11 @@ sm {
 /* Contact Form */
 
 .contact-form label {
-  color: #999;
+  color: rgb(15, 14, 14);
 }
 
 .contact-form input, .contact-form textarea {
-  padding: 10px 12px;
+  padding: 2px 6px;
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
