@@ -226,7 +226,7 @@ SECTION WRAPS
 }
 
 #footwrap h5 {
-  color: rgb(68, 3, 3);
+  color: rgb(196, 194, 194);
 }
 
 #footwrap t {
@@ -253,7 +253,7 @@ SECTION WRAPS
 }
 
 .credits {
-  color: #999;
+  color: rgb(26, 25, 25);
 }
 
 /* Global Values */
