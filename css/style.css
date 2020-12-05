@@ -156,27 +156,29 @@ SECTION WRAPS
 /* Header Wrap */
 
 #headerwrap {
-  background: url(../img/header-bg.jpg) no-repeat center top;
-  margin-top: 60px;
-  padding-top: 140px;
+  
+  margin-top: 5px;
+  padding-top: 100px;
   text-align: center;
   background-attachment: relative;
-  background-position: center center;
+  background-position:  center;
   min-height: 500px;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
-  background-size: 100%;
+  background-size: 60%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover ;
+  border-image-width: auto;
 }
 
 #headerwrap h1 {
   font-size: 80px;
-  color: white;
+  color: rgb(7, 6, 6);
+  text-align: center;
 }
 
 #headerwrap h3 {
