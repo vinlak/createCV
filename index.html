@@ -287,12 +287,12 @@
 
             <div class="form-group">
               <label for="contact-name">Your Name</label>
-              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name"  data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="to_name" id="to_name" class="form-control"  placeholder="Your Name"  data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="form-group">
               <label for="contact-email">Your Email</label>
-              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <input type="text" name="from_name" id="from_name" class="form-control"  placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
             <div class="form-group">
@@ -303,7 +303,7 @@
 
             <div class="form-group">
               <label for="contact-message">Your Message</label>
-              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+              <input type="text" name="message" id="message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
               <div class="validate"></div>
             </div>
 
@@ -312,10 +312,37 @@
             <div class="sent-message">Your message has been sent. Thank you!</div>
 
             <div class="form-send">
-              <button type="submit" class="btn btn-large">Send Message</button>
+              <button type="submit" class="btn btn-large" id="button" value="Send Email">Send Message</button>
             </div>
 
           </form>
+
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_Ai2wV7IxE4iDehITEcBMI')
+
+</script>
+<script>const btn = document.getElementById('button');
+
+  document.getElementById('form')
+   .addEventListener('submit', function(event) {
+     event.preventDefault();
+  
+     btn.value = 'Sending...';
+  
+     const serviceID = 'default_service';
+     const templateID = 'contact_form';
+  
+     emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Send Email';
+        alert('Sent!');
+      }, (err) => {
+        btn.value = 'Send Email';
+        alert(JSON.stringify(err));
+      });
+  });</script>
 
         </div>
       </div>
