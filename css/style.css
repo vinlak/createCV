@@ -183,7 +183,7 @@ SECTION WRAPS
 
 #headerwrap h3 {
   font-size: 20px;
-  color: white;
+  color: rgb(36, 34, 34);
 }
 
 /* Intnro Wrap */
@@ -243,10 +243,10 @@ SECTION WRAPS
 /* Copyright Wrap */
 
 #copyrights {
-  background: #222222;
+  background: #5a5757;
   padding: 20px 0;
   text-align: center;
-  color: #fff;
+  color:white;
   font-size: 16px;
 }
 
@@ -255,7 +255,7 @@ SECTION WRAPS
 }
 
 .credits {
-  color: rgb(26, 25, 25);
+  color: rgb(133, 125, 125);
 }
 
 /* Global Values */
